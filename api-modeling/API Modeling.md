@@ -1,14 +1,20 @@
-# learning Stack - API Modeling
+## learning Stack - API Modeling
 
-## Definitions (Entities)
+### Entities:
 
-### 1. Learning Path - Sequence of subjects required to master some subject or target some goal.
+#### 1. Learning Path
 
-### 2. Subject - Item of learning. Can have relationships with others subjects.
+Sequence of subjects required to master some subject or target some goal owned by some entity.
 
-## Endpoints
+#### 2. Subject
 
-### 1. Create a new learning path:
+Item of learning. Can have relationships with others subjects.
+
+### Endpoints
+
+#### 1. Learning Path
+
+##### 1.1 Create a new learning path:
 
     POST /learning-paths
 
@@ -28,15 +34,38 @@
     
     Return: learning path id (lpid)
     
-### 2. Get learning paths    
+##### 1.2. Get learning paths    
   
-   GET /learning-paths/1
-   
-### 2. List learning path content
+    GET /learning-paths/{lpid}
+    
+##### 1.3. Search learning paths    
   
-   GET /learning-paths/1/content
+    GET /learning-paths?[criterias]
    
-   
-### 3. List learning paths    
+##### 1.4. List learning path content
   
-   GET /learning-paths
+    GET /learning-paths/{lpid}/content
+   
+##### 1.5. List learning paths    
+  
+    GET /learning-paths
+   
+##### 1.6. Update learning path    
+ 
+    PUT /learning-paths/{lpid}   
+    
+##### 1.7. Update learning path    
+  
+    PATH /learning-paths/{lpid}
+    
+##### 1.8. Delete a learning path   
+  
+    PATH /learning-paths/{lpid}
+    
+    
+#### 2. Subject
+
+The subjects are uniques and have no owners?
+
+
+    
