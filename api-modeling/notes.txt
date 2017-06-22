@@ -1,0 +1,61 @@
+1. What is a learning Stack?
+   1.1. Subject
+       - Name:
+       - Category: []
+       - relationships
+          - relationship [is subtopic (parallelism), prerequisite , next step ]
+          - relevance (based on votes) for:
+             - Another Subject
+             - S
+
+      - Quizzes
+      - Certifications
+      - Learning Stack (Public or Private)
+           - Books
+           - Articles
+           - Tutorials
+           - Videos
+           - Courses
+           - Authorities in this subject
+
+2. Learning Paths:
+   - Based on votes defines the relationships between the Subjects
+
+Limit of private Learning Stacks 3 in free account.
+Limit of public Learning Stack 100 in free account.
+Limit of private Learning Paths 3 in free account.
+Limit of public Learning Paths 100 in free account.
+
+
+
+A learning path is a super topic with a audience and a level.
+    Leaning path:
+       - Name: xxxx
+       - Audience: xxxxx, xxxx, xxxx
+       - Level: xxxxxx
+       - Goal: xxxxxx
+
+Levels:
+  - Beginners (A), Intermediates (B), Advanced (c)
+
+The subjects whose relevance is below 5 (instance) are not shown if its is not for your target level or audience.
+
+Example:
+
+Learning Path: Intermediate DevOps for Developers
+   Kaizen (7-I) -> CAMS (10)             -> Configuration Management (10) -> Containers (10)
+                  |-> Culture (6)          |-> Principles(7)               |-> How to create a container (10)
+                  |-> Automation (10)      |-> Ansible (6)
+                  |-> Measurement (10)
+                  |-> Sharing (8)
+
+Learning Path: Introduction of DevOps for Managers
+   Kaizen (10-I) -> CAMS (10)             -> Configuration Management (7) -> Containers (8-I)
+                  |-> Culture (10)            |-> Principles(10)              |-> How to create a container (4)
+                  |-> Automation (7)          |-> Ansible (I3) - Not shown     |-> How to create a container (4)
+                  |-> Measurement (7)
+                  |-> Sharing (10)
+
+
+The links of learning paths defines the level and the relationship between the subjects.
+The subjects are independent. The learning paths materialize the relationships and the
